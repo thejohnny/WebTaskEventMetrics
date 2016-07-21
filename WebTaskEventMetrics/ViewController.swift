@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
 
     func incrementMetric(metric: String) {
-        let baseURL = NSURL(string: "http://localhost:8080/")
+        let baseURL = NSURL(string: "https://webtask.it.auth0.com/api/run/wt-thejohnny-gmail_com-0/incrementMetric")
         let request = NSURLRequest(URL: NSURL(string: "?vendorId=\(vendorId)&metricName=\(metric)", relativeToURL: baseURL)!)
         let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 
