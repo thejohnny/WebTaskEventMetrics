@@ -17,16 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-3s-6RX">
-                                <rect key="frame" x="271" y="111" width="57" height="30"/>
-                                <state key="normal" title="Button 1"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-3s-6RX">
+                                <rect key="frame" x="194" y="238" width="215" height="38"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Set Yellow Background">
+                                    <color key="titleColor" red="0.0" green="0.38819350656302504" blue="0.80480769230769234" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nJ-Yr-OSJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-Po-y61">
-                                <rect key="frame" x="270" y="171" width="59" height="30"/>
-                                <state key="normal" title="Button 2"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WebTask Metric Collection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-Xg-kUi">
+                                <rect key="frame" x="147" y="155" width="307" height="32.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-Po-y61">
+                                <rect key="frame" x="203" y="315" width="196" height="38"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Set Blue Background">
+                                    <color key="titleColor" red="0.0" green="0.38819350660000002" blue="0.80480769230000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeZ-Ef-Pmp"/>
                                 </connections>
@@ -34,10 +45,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GN2-3s-6RX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="0HU-Vm-pza"/>
-                            <constraint firstItem="W4T-Po-y61" firstAttribute="centerX" secondItem="GN2-3s-6RX" secondAttribute="centerX" id="aCg-PD-WhA"/>
-                            <constraint firstItem="GN2-3s-6RX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aSq-mB-jq1"/>
-                            <constraint firstItem="W4T-Po-y61" firstAttribute="top" secondItem="GN2-3s-6RX" secondAttribute="bottom" constant="30" id="qfA-bN-lt2"/>
+                            <constraint firstItem="W4T-Po-y61" firstAttribute="centerX" secondItem="GN2-3s-6RX" secondAttribute="centerX" id="2u8-37-m9R"/>
+                            <constraint firstItem="GN2-3s-6RX" firstAttribute="top" secondItem="6Or-Xg-kUi" secondAttribute="bottom" constant="50.5" id="QQl-jr-gHt"/>
+                            <constraint firstItem="6Or-Xg-kUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TFJ-oz-jZw"/>
+                            <constraint firstItem="6Or-Xg-kUi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="135" id="elX-8F-HhG"/>
+                            <constraint firstItem="GN2-3s-6RX" firstAttribute="centerX" secondItem="6Or-Xg-kUi" secondAttribute="centerX" id="gBL-1Z-XRV"/>
+                            <constraint firstItem="W4T-Po-y61" firstAttribute="top" secondItem="GN2-3s-6RX" secondAttribute="bottom" constant="39" id="v70-bD-d8e"/>
                         </constraints>
                     </view>
                     <connections>
@@ -47,6 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="377" y="285"/>
         </scene>
     </scenes>
 </document>

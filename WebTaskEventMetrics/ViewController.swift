@@ -25,13 +25,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(sender: UIButton) {
+        var color: UIColor
+        
         switch sender.tag {
         case 0:
-            incrementMetric("button1Tapped")
+            incrementMetric("button0Tapped")
+            color = UIColor(red: 1, green: 229 / 255.0, blue: 134.0 / 255.0, alpha: 1)
         case 1:
-            incrementMetric("button2Tapped")
+            incrementMetric("button1Tapped")
+            color = UIColor(red: 117.0 / 255.0, green: 202.0 / 255.0, blue: 1, alpha: 1)
         default:
             return
+        }
+        
+        UIView.animateWithDuration(0.4) {
+            self.view.backgroundColor = color
         }
     }
 
